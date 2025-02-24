@@ -47,6 +47,252 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /** Your CSS Below **/
+*{
+  padding:0.3rem ;
+  margin: 1px;
+}
+body{
+  background-color: var(--clr-paleBlue);
+}
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+.container{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  width: 690px;
+  height: 480px;
+  background-color: var(--clr-white);
+  border-radius: 20px; 
+}
+
+.content-box{
+  margin: 10px;
+  padding-left:0rem;
+  padding-right: 1rem;
+  /* background-color: var(--clr-white); */
+}
+
+
+.summary{
+  font-family: var(--fs-base);
+  display: flex;
+  justify-content: flex-start;
+  color: var(--clr-darkGrayBlue);
+}
+.reaction{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin: 20px;
+  border: 0px;
+  background-color:rgb(252, 240, 230);
+  border-radius: 15px;
+  width: 290px;
+  height: 50px;
+}
+.text1{
+  color:hsl(0, 73%, 56%);
+  font-size: var(--font-paragraph);
+  display: flex;
+  justify-content: flex-start; 
+}
+.memory{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin: 20px;
+  border: 0px;
+  background-color:hsl(39, 50%, 95%);
+  border-radius: 15px;
+  width: 290px;
+  height: 50px;
+}
+.text2{
+  color:var(--clr-orangeYellow);
+  font-size: var(--font-paragraph);
+  display: flex;
+  justify-content: flex-start; 
+}
+.verbal{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin: 20px;
+  border: 0px;
+  background-color:hsl(170, 47%, 93%);
+  border-radius: 15px;
+  width: 290px;
+  height: 50px;
+}
+.text3{
+  color: teal;
+  font-size: var(--font-paragraph);
+  display: flex;
+  justify-content: flex-start; 
+}
+.visual{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin: 20px;
+  border: 0px;
+  background-color:hsl(244, 48%, 94%);
+  border-radius: 15px;
+  width: 290px;
+  height: 50px;
+}
+.text4{
+  color:var(--clr-cobaltBlue);
+  font-size: var(--font-paragraph);
+  display: flex;
+  justify-content: flex-start; 
+}
+.continue-box{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  padding: 1rem;
+  margin: 20px;
+  border: 10px;
+  background-color: hsl(234, 71%, 22%);
+  border-radius: 50px;
+  width: 280px;
+  height: 50px;
+}
+.continue-box p{
+  color: white;
+}
+.number1{
+ color:black;
+ font-weight:var(--fw-bold);
+ font-style:var(--fw-regular);
+ 
+}
+.number2{
+  color:rgb(97, 92, 92);
+}
+.blue-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var( --gra-lightRoyalBlue);
+  border-radius: 20px;
+  font:var(-fs-base);
+  width: 316px;
+  /* height: 470px; */
+}
+.inner-blue{
+  margin: 0px;
+  border: 0px;
+  /* padding:1rem; */
+}
+.result{
+  color: rgb(194, 175, 175);
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  margin-top: 0px;
+  /* padding:1rem; */
+
+}
+.circle{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image:linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  margin-left: 38px;
+
+  }
+  .numerator{
+    color: var( --clr-white);
+    font-size: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+.denominator{
+  color: var(--clr-paleBlue);
+  opacity: 50%;
+  font-size: larger;
+}
+.Great{
+  color:hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  margin-right: 35px;
+}
+.para{
+  text-align: center;
+  color: hsl(223, 30%, 86%);;
+  opacity: 80%;
+  font-size: larger;
+}
+@media (max-width:704px){
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    height:auto;
+    width: 370px;
+  }
+  .blue-box{
+   height: auto;
+   width: 360px;
+  }
+  .circle{
+    width: 160px;
+    height: 160px;
+    margin-left: 60px;
+  }
+  .result{
+   font-size: 1rem; 
+  }
+  .numerator{
+    font-size: 2.5rem;
+  }
+  .denominator{
+    font-size: 1rem;
+  }
+  .Great{
+    font-size: 1rem;
+  }
+  .para{
+    font-size: 1rem;
+  }
+  .content-box{
+    gap: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  .summary{
+    font-size: 1rem;
+  }
+  .reaction,.memory,.verbal,.visual{
+    width: 300px;
+  }
+  .continue-box{
+    width: 275px;
+  }
+}
 
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
