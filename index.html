@@ -14,81 +14,70 @@
 </head>
 
 <body>
-  <div class="main">
-    <div class="container">
-      <div class="blue-box">
-        <div class="inner-blue">
-          <div class="result">
-            <h2>Your Result</h2>
-          </div>
-          <div class="circle">
-            <p class="numerator">76</p>
-            <p class="denominator">of 100</p>
-          </div>
-          <div class="Great">
-            <h1>Great</h1>
-          </div>
-          <div class="para">
-            <p>You scored higher than 65% of the people who have taken these tests.</p>
-          </div>
-        </div>
+  <section id="container">
+    <div class="result">
+      <h2 class="title">Your Result</h2>
+      <div class="circle">
+        <p class="numerator">76</p>
+        <p class="denominator">of 100</p>
       </div>
-      <div class="white-box">
-        <div class="content-box">
-          <div class="summary">
-            <h2> Summary</h2>
-          </div>
-          <div class="reaction">
-            <div class="text1">
-              <img class="image" src="./assets/images/icon-reaction.svg" alt="reaction-pic">
-              <p>Reaction</p>
-            </div>
-            <div class="score">
-              <p class="number1">80 <span class="number2">/ 100</span>
-              </p>
-            </div>
-          </div>
-          <div class="memory">
-            <div class="text2">
-              <img class="image" src="./assets/images/icon-memory.svg" alt="memory-pic">
-              <p>Memory</p>
-            </div>
-            <div class="score">
-              <p class="number1">92 <span class="number2">/ 100</span>
-              </p>
-            </div>
-          </div>
-          <div class="verbal">
-            <div class="text3">
-              <img class="image" src="./assets/images/icon-verbal.svg" alt="verbal-pic">
-              <p>Verbal</p>
-            </div>
-            <div class="score">
-              <p class="number1">61 <span class="number2">/ 100</span>
-              </p>
-            </div>
-          </div>
-          <div class="visual">
-            <div class="text4">
-              <img class="image" src="./assets/images/icon-visual.svg" alt="visual-pic">
-              <p>Visual</p>
-            </div>
-            <div class="score">
-              <p class="number1">72 <span class="number2">/ 100</span>
-              </p>
-            </div>
-          </div>
-          <div class="continue-box">
-            <p>Continue</p>
-          </div>
-        </div>
-      </div>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Raji</a>.
+      <div class="great">
+        <h3>Great</h3>
+        <p>Your scored higher than 65% of the people who have taken these tests.</p>
       </div>
     </div>
+    <div class="summary">
+      <h2>Summary</h2>
+      <div class="right-container">
+        <div id="reaction" class="colorbox">
+          <div class="pictures">
+            <img src="./assets/images/icon-reaction.svg" alt="reactionimg">
+            <span class="red">Reaction</span>
+          </div>
+          <div class="dark-number">
+            <p>80 <span class="light-number">/ 100</span></p>
+          </div>
+        </div>
+        <div id="memory" class="colorbox">
+          <div class="pictures">
+            <img src="./assets/images/icon-memory.svg" alt="memoryimg">
+            <span class="yellow">Memory</span>
+          </div>
+          <div class="dark-number">
+            <p>92 <span class="light-number">/ 100</span></p>
+          </div>
+        </div>
+        <div id="verbal" class="colorbox">
+          <div class="pictures">
+            <img src="./assets/images/icon-verbal.svg" alt="verbalimg">
+            <span class="green">Verbal</span>
+          </div>
+          <div class="dark-number">
+            <p>61 <span class="light-number">/ 100</span></p>
+          </div>
+        </div>
+        <div id="visual" class="colorbox">
+          <div class="pictures">
+            <img src="./assets/images/icon-visual.svg" alt="visualimg">
+            <span class="purple">Visual</span>
+          </div>
+          <div class="dark-number">
+            <p>73 <span class="light-number">/ 100</span></p>
+          </div>
+        </div>
+        <button class="ctn">Continue</button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Raji</a>.
   </div>
+
+
 </body>
 
 </html>
